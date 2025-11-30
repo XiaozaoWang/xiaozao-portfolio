@@ -103,14 +103,8 @@ export function CustomMDX(props) {
   return (
     <ReactMarkdown
       components={{
-        h1: createHeading(1),
-        h2: createHeading(2),
-        h3: createHeading(3),
-        h4: createHeading(4),
-        h5: createHeading(5),
-        h6: createHeading(6),
+        ...components,
         img: RoundedImage,
-        a: CustomLink,
         code: ({ children, className }) => {
           // Handle inline code vs code blocks
           if (className && className.includes("language-")) {
@@ -125,8 +119,6 @@ export function CustomMDX(props) {
         pre: ({ children }) => (
           <pre className="overflow-x-auto">{children}</pre>
         ),
-        table: Table,
-        ...components,
         ...(props.components || {}),
       }}
     >
