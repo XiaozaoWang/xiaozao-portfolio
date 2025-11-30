@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { CustomMDX } from "app/components/mdx";
 import { formatDate, getBlogPosts } from "app/blog/utils";
 import { baseUrl } from "app/sitemap";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
@@ -84,15 +85,38 @@ export default async function Blog({ params }) {
           }),
         }}
       />
-      <h1 className="title font-semibold text-2xl tracking-tighter">
+      {/* Hero Image */}
+      {post.metadata.image && (
+        <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden shadow-lg">
+          <Image
+            src={post.metadata.image}
+            alt={post.metadata.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
+      {!post.metadata.image && (
+        <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden shadow-lg">
+          <Image
+            src={`https://picsum.photos/800/400?random=${post.slug}`}
+            alt={post.metadata.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
+      <h1 className="title font-semibold text-4xl tracking-tighter mb-4">
         {post.metadata.title}
       </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
+      <div className="flex justify-between items-center mb-8 text-sm border-b border-gray-200 dark:border-gray-700 pb-4">
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {formatDate(post.metadata.publishedAt)}
         </p>
       </div>
-      <article className="prose">
+      <article className="prose prose-lg max-w-none dark:prose-invert">
         <CustomMDX source={post.content} />
       </article>
     </section>
