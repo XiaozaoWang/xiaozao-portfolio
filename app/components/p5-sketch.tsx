@@ -2,22 +2,22 @@
 import { useEffect, useRef } from "react";
 
 export function P5Sketch() {
-  const sketchRef = useRef(null);
-  const p5Instance = useRef(null);
+  const sketchRef = useRef<HTMLDivElement>(null);
+  const p5Instance = useRef<any>(null);
 
   useEffect(() => {
     // Dynamically import p5.js to avoid SSR issues
     import("p5").then((p5Module) => {
       const p5 = p5Module.default;
 
-      const sketch = (p) => {
-        let prism;
-        let prisms = []; // needs to be developed
-        let beams = [];
+      const sketch = (p: any) => {
+        let prism: any;
+        let prisms: any[] = []; // needs to be developed
+        let beams: any[] = [];
 
         //customizable parameters
         let rainbow = true;
-        let rotate_amount;
+        let rotate_amount: any;
 
         const rarerToDenser = 1.5; // refractive index
         const denserToRarer = 0.67; // refractive index
@@ -84,7 +84,16 @@ export function P5Sketch() {
         };
 
         class Surface {
-          constructor(a, b, p3) {
+          a: any;
+          b: any;
+          p3: any;
+          mid: any;
+          inner_normal_dir: any;
+          theta: any;
+          inner_normal_angle: any;
+          outer_normal_angle: any;
+
+          constructor(a: any, b: any, p3: any) {
             this.a = a;
             this.b = b;
             this.p3 = p3;
@@ -124,7 +133,14 @@ export function P5Sketch() {
         }
 
         class Prism {
-          constructor(px, py, height) {
+          pos: any;
+          height: any;
+          v1: any;
+          v2: any;
+          v3: any;
+          angle: any;
+
+          constructor(px: any, py: any, height: any) {
             this.pos = p.createVector(px, py);
             this.height = height;
             this.v1 = p.createVector(
@@ -202,7 +218,17 @@ export function P5Sketch() {
         }
 
         class Beam {
-          constructor(startx, starty, angle, length) {
+          start: any;
+          angle: any;
+          originAngle: any;
+          fluctuateFrq: any;
+          fluctuateAmp: any;
+          dir: any;
+          length: any;
+          incidence_angle: any;
+          state: any;
+
+          constructor(startx: any, starty: any, angle: any, length: any) {
             this.start = p.createVector(startx, starty);
             this.angle = angle;
             this.originAngle = angle;
@@ -232,22 +258,22 @@ export function P5Sketch() {
             p.pop();
           }
 
-          touch(prism) {
-            let surfaces = [];
+          touch(prism: any) {
+            let surfaces: any[] = [];
             surfaces.push(new Surface(prism.v1, prism.v2, prism.v3));
             surfaces.push(new Surface(prism.v2, prism.v3, prism.v1));
             surfaces.push(new Surface(prism.v1, prism.v3, prism.v2));
 
-            let closer = null;
-            let farther = null;
-            let closer_surface = null;
+            let closer: any = null;
+            let farther: any = null;
+            let closer_surface: any = null;
             let record_closer = Infinity;
             let record_farther = 0;
-            let closer_angle = null;
-            let closer_surface_angle = null;
-            let farther_surface = null;
-            let inner_angle = null;
-            let outer_angle = null;
+            let closer_angle: any = null;
+            let closer_surface_angle: any = null;
+            let farther_surface: any = null;
+            let inner_angle: any = null;
+            let outer_angle: any = null;
 
             for (let surface of surfaces) {
               let returned = this.intersect(surface);
@@ -343,7 +369,7 @@ export function P5Sketch() {
             }
           }
 
-          drawNormal(x, y, normal_angle) {
+          drawNormal(x: any, y: any, normal_angle: any) {
             let dir = p5.Vector.fromAngle(normal_angle);
             p.line(x, y, x + dir.x * 20, y + dir.y * 20);
             p.stroke(0, 360, 360);
@@ -351,7 +377,7 @@ export function P5Sketch() {
             p.stroke(210);
           }
 
-          drawReflection(x, y, normal, beam) {
+          drawReflection(x: any, y: any, normal: any, beam: any) {
             let ref_angle = normal - ((beam - p.PI) % (2 * p.PI)) + normal;
             let dir = p5.Vector.fromAngle(ref_angle);
             p.stroke(44, 40, 60);
@@ -359,7 +385,7 @@ export function P5Sketch() {
             p.stroke(210);
           }
 
-          intersect(surface) {
+          intersect(surface: any) {
             const x1 = surface.a.x + p.mouseX;
             const y1 = surface.a.y + p.mouseY;
             const x2 = surface.b.x + p.mouseX;
