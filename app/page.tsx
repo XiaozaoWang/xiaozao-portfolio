@@ -1,34 +1,30 @@
-import { BlogPosts } from "app/components/posts";
-import { Gallery } from "app/components/gallery";
-import { P5Sketch } from "app/components/p5-sketch";
+import { FullPageP5Sketch } from "app/components/full-page-p5-sketch";
 
 export default function Page() {
   return (
-    <section>
-      <div className="mb-12">
-        <h1 className="mb-8 text-4xl font-bold tracking-tighter text-gray-900 dark:text-gray-100">
-          Welcome to My Portfolio
-        </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400 mb-4">
-          Hi, I'm Xiaozao! I'm passionate about creating digital experiences
-          through code and design.
-        </p>
-        <p className="text-gray-600 dark:text-gray-400">
-          Explore my blog posts below to see my thoughts on development, design,
-          and technology.
-        </p>
+    <div className="relative h-full">
+      {/* Full-page P5.js background */}
+      <FullPageP5Sketch />
+
+      {/* Welcome message overlay */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="bg-black/20 backdrop-blur-sm rounded-lg p-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">
+            Welcome
+          </h1>
+          <p className="text-lg md:text-xl text-white/80">
+            Interactive light refraction simulation
+          </p>
+        </div>
       </div>
 
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-8 text-gray-900 dark:text-gray-100">
-          Latest Blog Posts
-        </h2>
-        <BlogPosts />
+      {/* Instructions at bottom */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <p className="text-white/60 text-sm text-center">
+          Move mouse to control the prism • Press 'R' to toggle rainbow • Click
+          and drag to rotate
+        </p>
       </div>
-
-      <Gallery />
-
-      <P5Sketch />
-    </section>
+    </div>
   );
 }
