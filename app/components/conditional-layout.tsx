@@ -31,7 +31,8 @@ export function ConditionalLayout({ children }: { children: React.ReactNode }) {
       </div>
       {/* Main Content */}
       <div className="flex-1 ml-64">
-        <main className="max-w-4xl mx-auto px-8 py-8">
+        <main className="max-w-6xl mx-auto px-6 py-8">
+          {/* 6xl控制宽度 */}
           {children}
           <Footer />
         </main>
