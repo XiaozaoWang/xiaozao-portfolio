@@ -5,21 +5,13 @@ export async function GET() {
   let allBlogs = await getBlogPosts();
 
   const itemsXml = allBlogs
-    .sort((a, b) => {
-      if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
-        return -1;
-      }
-      return 1;
-    })
     .map(
       (post) =>
         `<item>
-          <title>${post.metadata.title}</title>
+          <title>${post.title}</title>
           <link>${baseUrl}/work/${post.slug}</link>
-          <description>${post.metadata.summary || ""}</description>
-          <pubDate>${new Date(
-            post.metadata.publishedAt
-          ).toUTCString()}</pubDate>
+          <description>${post.description || ""}</description>
+          <pubDate>${new Date().toUTCString()}</pubDate>
         </item>`
     )
     .join("\n");
