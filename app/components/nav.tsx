@@ -3,8 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = {
-  "/about": {
-    name: "about",
+  "/home": {
+    name: "home",
     external: true,
     url: "https://pyrite-sturgeon-79b.notion.site/Xiaozao-Wang-202c7099423b80519d6ae821e40a4306",
   },
