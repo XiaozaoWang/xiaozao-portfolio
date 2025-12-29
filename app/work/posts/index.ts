@@ -57,7 +57,7 @@ export const posts: PostMetadata[] = [
     tags: ["explainable AI", "education", "machine learning", "web dev"],
     featured: false,
     time: "2024-2025",
-    image: "/blog-images/inn/neuron.gif",
+    image: "/blog-images/inn/d1.gif",
     type: "individual",
   },
   {

@@ -54,7 +54,7 @@ export default function Page() {
               </svg>
             </button>
             <p className="text-white text-xs leading-relaxed">
-              Welcome to the new version of my portfolio.{" "}
+              Welcome to the new version of my portfolio!{" "}
               <a
                 href="https://pyrite-sturgeon-79b.notion.site/Xiaozao-Wang-202c7099423b80519d6ae821e40a4306"
                 target="_blank"

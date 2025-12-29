@@ -91,7 +91,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "3D Renderings",
     // time: "2023",
     category: "art",
-    coverImage: "/gallery/pool/c.png",
+    coverImage: "/gallery/render/c.png",
     hasCustomContent: true,
   },
   {
