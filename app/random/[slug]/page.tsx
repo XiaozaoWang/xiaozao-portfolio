@@ -105,7 +105,7 @@ export default async function RandomPost({ params }) {
               <div key={index} className="relative w-full h-96 overflow-hidden">
                 <Image
                   src={image}
-                  alt={`${post.title} - ${index + 1}`}
+                  alt={`${post!.title} - ${index + 1}`}
                   fill
                   className="object-cover"
                 />
