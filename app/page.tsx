@@ -32,15 +32,15 @@ export default function Page() {
 
       {/* New version callout */}
       {showCallout && (
-        <div className="absolute bottom-8 right-8 z-10">
-          <div className="bg-white/15 backdrop-blur-md rounded-lg px-5 py-3.5 border border-white/30 shadow-lg max-w-sm relative">
+        <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-10">
+          <div className="bg-white/15 backdrop-blur-md rounded-xl px-8 py-5 border border-white/30 shadow-lg max-w-xl relative">
             <button
               onClick={() => setShowCallout(false)}
-              className="absolute -top-2 -right-2 w-6 h-6 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors border border-white/30"
+              className="absolute -top-3 -right-3 w-8 h-8 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors border border-white/30"
               aria-label="Close"
             >
               <svg
-                className="w-3.5 h-3.5 text-white"
+                className="w-4 h-4 text-white"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export default function Page() {
                 />
               </svg>
             </button>
-            <p className="text-white text-xs leading-relaxed">
+            <p className="text-white text-base leading-relaxed">
               Welcome to the new version of my portfolio!{" "}
               <a
                 href="https://pyrite-sturgeon-79b.notion.site/Xiaozao-Wang-202c7099423b80519d6ae821e40a4306"

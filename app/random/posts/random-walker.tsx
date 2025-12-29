@@ -54,17 +54,17 @@ export default function RandomWalkerPost() {
         <div className="mt-6">
           <div className="flex gap-4 max-w-full overflow-hidden">
             <ZoomableImage
-              src="/gallery/coding/10.jpg"
+              src="/gallery/coding2/10.jpg"
               alt="Image"
               className="flex-1 min-w-0"
             />
             <ZoomableImage
-              src="/gallery/coding/11.jpg"
+              src="/gallery/coding2/11.jpg"
               alt="Image"
               className="flex-1 min-w-0"
             />
             <ZoomableImage
-              src="/gallery/coding/12.jpg"
+              src="/gallery/coding2/12.jpg"
               alt="Image"
               className="flex-1 min-w-0"
             />

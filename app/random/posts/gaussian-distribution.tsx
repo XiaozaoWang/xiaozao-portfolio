@@ -44,17 +44,17 @@ export default function GaussianDistributionPost() {
         <div className="mt-6">
           <div className="flex gap-4 max-w-full overflow-hidden">
             <ZoomableImage
-              src="/gallery/coding/5.png"
+              src="/gallery/coding2/5.jpg"
               alt="Image"
               className="flex-1 min-w-0"
             />
             <ZoomableImage
-              src="/gallery/coding/6.png"
+              src="/gallery/coding2/6.jpg"
               alt="Image"
               className="flex-1 min-w-0"
             />
             <ZoomableImage
-              src="/gallery/coding/7.png"
+              src="/gallery/coding2/7.jpg"
               alt="Image"
               className="flex-1 min-w-0"
             />

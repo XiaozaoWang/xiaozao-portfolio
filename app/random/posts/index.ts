@@ -16,7 +16,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Dark Side of the Moon",
     time: "2023",
     category: "creative-coding",
-    coverImage: "/gallery/coding/1.jpg",
+    coverImage: "/gallery/coding2/1.jpg",
     hasCustomContent: true,
   },
   {
@@ -24,7 +24,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Gaussian Distribution",
     time: "2023",
     category: "creative-coding",
-    coverImage: "/gallery/coding/8.png",
+    coverImage: "/gallery/coding2/8.jpg",
     hasCustomContent: true,
   },
   {
@@ -32,7 +32,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Genesis",
     time: "2023",
     category: "creative-coding",
-    coverImage: "/gallery/coding/1.gif",
+    coverImage: "/gallery/coding2/1.gif",
     hasCustomContent: true,
   },
 
@@ -41,7 +41,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Linked Nodes",
     time: "2023",
     category: "creative-coding",
-    coverImage: "/gallery/coding/2.gif",
+    coverImage: "/gallery/coding2/2.gif",
     hasCustomContent: true,
   },
   //   {
@@ -49,7 +49,7 @@ export const randomPosts: RandomPostMetadata[] = [
   //     title: "Create your Planet System",
   //     time: "2023",
   //     category: "creative-coding",
-  //     coverImage: "/gallery/coding/planet.jpg",
+  //     coverImage: "/gallery/coding2/planet.jpg",
   //     hasCustomContent: true,
   //   },
   {
@@ -57,7 +57,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "The World's End",
     time: "2023",
     category: "creative-coding",
-    coverImage: "/gallery/coding/11.jpg",
+    coverImage: "/gallery/coding2/11.jpg",
     hasCustomContent: true,
   },
   // -------------------art-------------------------------

@@ -51,7 +51,11 @@ export default function LinkedNodesPost() {
 
         {/* Main Content */}
         <div className="mt-6">
-          <ZoomableImage src="/gallery/coding/2.gif" alt="Image" className="" />
+          <ZoomableImage
+            src="/gallery/coding2/2.gif"
+            alt="Image"
+            className=""
+          />
           {/* <h3 className="!mt-40">Live Demo</h3>
           <div className="aspect-video mb-8">
             <iframe

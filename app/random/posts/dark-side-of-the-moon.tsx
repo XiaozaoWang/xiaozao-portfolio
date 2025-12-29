@@ -54,19 +54,19 @@ export default function Sample1Post() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="!space-y-4">
               <ZoomableImage
-                src="/gallery/coding/2.jpg"
+                src="/gallery/coding2/2.jpg"
                 alt="Image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/coding/3.jpg"
+                src="/gallery/coding2/3.jpg"
                 alt="Image"
                 className=""
               />
             </div>
             <div className="!space-y-4">
               <ZoomableImage
-                src="/gallery/coding/1.jpg"
+                src="/gallery/coding2/1.jpg"
                 alt="Image"
                 className=""
               />
@@ -78,7 +78,7 @@ export default function Sample1Post() {
             </h3>
 
             <ZoomableImage
-              src="/gallery/coding/4.jpg"
+              src="/gallery/coding2/4.jpg"
               alt="Image"
               className="w-1/2"
             />
