@@ -6,7 +6,14 @@ import { useState } from "react";
 import { getBlogPosts } from "app/work/utils";
 import { getRandomPosts } from "app/random/utils";
 
-const navItems = {
+type NavItem = {
+  name: string;
+  external: boolean;
+  url: string;
+  hasSublist?: boolean;
+};
+
+const navItems: Record<string, NavItem> = {
   // "/home": {
   //   name: "home",
   //   external: true,
