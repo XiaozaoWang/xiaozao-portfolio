@@ -47,7 +47,7 @@ export const posts: PostMetadata[] = [
     tags: ["generative art", "physical computing", "speculative design"],
     featured: false,
     time: "2025",
-    image: "/blog-images/an/sn2.jpg",
+    image: "/blog-images/an2/sn2.jpg",
     type: "individual",
   },
   {
