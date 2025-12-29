@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ZoomableImage } from "app/components/zoomable-image";
 
 export default function VimPost() {
   return (
@@ -220,14 +221,11 @@ return users.map(user => ({
         {/* Single image */}
         <div className="mb-8">
           <h3 className="text-lg font-bold mb-3">Single Image</h3>
-          <div className="relative w-full h-64 rounded-lg overflow-hidden">
-            <Image
-              src="https://picsum.photos/800/300"
-              alt="Sample image"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <ZoomableImage
+            src="https://picsum.photos/800/300"
+            alt="Sample image"
+            className="w-full h-64 rounded-lg object-cover"
+          />
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 text-center">
             Image caption
           </p>
@@ -236,14 +234,11 @@ return users.map(user => ({
         {/* Image with text wrap */}
         <div className="mb-8">
           <h3 className="text-lg font-bold mb-3">Image with Text Wrap</h3>
-          <div className="float-left w-48 h-32 mr-4 mb-2 relative rounded overflow-hidden">
-            <Image
-              src="https://picsum.photos/300/200"
-              alt="Float image"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <ZoomableImage
+            src="https://picsum.photos/300/200"
+            alt="Float image"
+            className="float-left w-48 h-32 mr-4 mb-2 rounded object-cover"
+          />
           <p>
             This text wraps around the floating image. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
@@ -258,22 +253,16 @@ return users.map(user => ({
         <div className="mb-8">
           <h3 className="text-lg font-bold mb-3">Side by Side Images</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="relative h-40 rounded overflow-hidden">
-              <Image
-                src="https://picsum.photos/400/300"
-                alt="Image 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-40 rounded overflow-hidden">
-              <Image
-                src="https://picsum.photos/400/301"
-                alt="Image 2"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <ZoomableImage
+              src="https://picsum.photos/400/300"
+              alt="Image 1"
+              className="h-40 rounded object-cover w-full"
+            />
+            <ZoomableImage
+              src="https://picsum.photos/400/301"
+              alt="Image 2"
+              className="h-40 rounded object-cover w-full"
+            />
           </div>
         </div>
       </section>
@@ -287,17 +276,12 @@ return users.map(user => ({
           <h3 className="text-lg font-bold mb-3">Grid Gallery (2x2)</h3>
           <div className="grid grid-cols-2 gap-2">
             {[1, 2, 3, 4].map((i) => (
-              <div
+              <ZoomableImage
                 key={i}
-                className="relative aspect-square rounded overflow-hidden"
-              >
-                <Image
-                  src={`https://picsum.photos/300/30${i}`}
-                  alt={`Gallery ${i}`}
-                  fill
-                  className="object-cover hover:scale-110 transition-transform duration-300"
-                />
-              </div>
+                src={`https://picsum.photos/300/30${i}`}
+                alt={`Gallery ${i}`}
+                className="aspect-square rounded object-cover w-full hover:opacity-90 transition-opacity"
+              />
             ))}
           </div>
         </div>
@@ -307,17 +291,12 @@ return users.map(user => ({
           <h3 className="text-lg font-bold mb-3">Flexbox Gallery</h3>
           <div className="flex space-x-2 overflow-x-auto pb-2">
             {[1, 2, 3, 4, 5].map((i) => (
-              <div
+              <ZoomableImage
                 key={i}
-                className="relative w-32 h-32 flex-shrink-0 rounded overflow-hidden"
-              >
-                <Image
-                  src={`https://picsum.photos/200/20${i}`}
-                  alt={`Flex ${i}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
+                src={`https://picsum.photos/200/20${i}`}
+                alt={`Flex ${i}`}
+                className="w-32 h-32 flex-shrink-0 rounded object-cover"
+              />
             ))}
           </div>
         </div>
@@ -326,39 +305,31 @@ return users.map(user => ({
         <div className="mb-8">
           <h3 className="text-lg font-bold mb-3">Masonry-style Gallery</h3>
           <div className="columns-2 md:columns-3 gap-4">
-            <div className="relative mb-4 rounded overflow-hidden break-inside-avoid">
-              <Image
+            <div className="mb-4 rounded overflow-hidden break-inside-avoid">
+              <ZoomableImage
                 src="https://picsum.photos/300/400"
                 alt="Masonry 1"
-                width={300}
-                height={400}
                 className="w-full"
               />
             </div>
-            <div className="relative mb-4 rounded overflow-hidden break-inside-avoid">
-              <Image
+            <div className="mb-4 rounded overflow-hidden break-inside-avoid">
+              <ZoomableImage
                 src="https://picsum.photos/300/300"
                 alt="Masonry 2"
-                width={300}
-                height={300}
                 className="w-full"
               />
             </div>
-            <div className="relative mb-4 rounded overflow-hidden break-inside-avoid">
-              <Image
+            <div className="mb-4 rounded overflow-hidden break-inside-avoid">
+              <ZoomableImage
                 src="https://picsum.photos/300/500"
                 alt="Masonry 3"
-                width={300}
-                height={500}
                 className="w-full"
               />
             </div>
-            <div className="relative mb-4 rounded overflow-hidden break-inside-avoid">
-              <Image
+            <div className="mb-4 rounded overflow-hidden break-inside-avoid">
+              <ZoomableImage
                 src="https://picsum.photos/300/350"
                 alt="Masonry 4"
-                width={300}
-                height={350}
                 className="w-full"
               />
             </div>

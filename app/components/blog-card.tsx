@@ -23,14 +23,21 @@ export function BlogCard({ post }: BlogCardProps) {
 
       <div>
         {/* Title with featured star */}
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors flex items-center">
-          {post.featured && (
-            <span className="text-yellow-500 mr-2 text-lg" title="Featured">
-              ⭐
+        <div className="flex items-center gap-2 mb-2">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors flex items-center">
+            {post.featured && (
+              <span className="text-yellow-500 mr-2 text-lg" title="Featured">
+                ⭐
+              </span>
+            )}
+            {post.title}
+          </h3>
+          {post.type === "team" && (
+            <span className="text-xs font-medium px-1.5 py-0.5 rounded border text-purple-600 dark:text-purple-400 border-purple-300 dark:border-purple-600 whitespace-nowrap">
+              team project
             </span>
           )}
-          {post.title}
-        </h3>
+        </div>
 
         {/* Time and Description */}
         <div className="mb-3">
@@ -50,7 +57,7 @@ export function BlogCard({ post }: BlogCardProps) {
               className="text-sm font-medium"
               style={{ color: getTagColor(tag) }}
             >
-              {tag}
+              #{tag}
             </span>
           ))}
         </div>

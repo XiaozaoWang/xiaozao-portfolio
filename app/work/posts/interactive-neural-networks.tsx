@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { Gallery } from "app/components/gallery";
+import { ZoomableImage } from "app/components/zoomable-image";
 import { posts } from "./index";
 
 export default function InteractiveNeuralNetworksPost() {
@@ -6,71 +8,100 @@ export default function InteractiveNeuralNetworksPost() {
   return (
     <article className="prose prose-lg max-w-none dark:prose-invert">
       <div className="mb-8">
+        <h1 className="!text-6xl font-bold !my-10 !text-blue-500 dark:!text-white">
+          How to make machine learning more intuitive for beginners?
+        </h1>
+        {/* Info Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              This project is an educational exploration which aims to enhance
-              public’s understanding of neural networks by developing an
-              interactive online guide that explains their inner workings.
-              Through the use of text explanations, real-time simulations, and
-              interactive graphics, users can actively engage with the learning
-              process by modifying parameters and observing the corresponding
-              effects. This approach fosters a more intuitive and hands-on
-              understanding of complex concepts, contrasted with traditional,
-              passive learning methods. This project contributes to the
-              principles of Explainable AI (XAI) by promoting transparency in AI
-              decision-making process, building trust and encouraging
-              responsible use of this technology.
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Abstract
+            </h3>
+            <p>
+              <strong>
+                AI feels like a black box because we teach symbols and
+                terminology before developing intuition.
+              </strong>
+            </p>
+            <p>
+              <strong>
+                In this project, I turn neural networks into something you can
+                play with and understand through interaction.
+              </strong>
+            </p>
+
+            <p>
+              Interactive Neural Networks is an educational exploration which
+              aims to enhance public’s understanding of neural networks by
+              developing an interactive online guide that explains their inner
+              workings. Through the use of text explanations, real-time
+              simulations, and interactive graphics,{" "}
+              <strong>
+                users can actively engage with the learning process by modifying
+                parameters and observing the corresponding effects.
+              </strong>
+            </p>
+
+            <p>
+              This approach fosters a more intuitive and hands-on understanding
+              of complex concepts, contrasted with traditional, passive learning
+              methods. This project contributes to the principles of Explainable
+              AI (XAI) by promoting transparency in AI decision-making process,
+              building trust and encouraging responsible use of this technology.
             </p>
           </div>
 
           {/* Right Sidebar */}
           {/* space y 没用 */}
           <div className="space-y-2">
-            {/* bold p */}
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Project Details
-            </p>
-            <p>{postData?.tags.map((tag) => `#${tag}`).join(" ")}</p>
-
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Time
-            </p>
-            <p>2024-2025</p>
-
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Toolkit
-            </p>
+            </h3>
             <p>React.js, custom machine learning model, Arduino, electronics</p>
 
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Exhibitions
-            </p>
+            </h3>
             {/* no margin between the two p */}
-            <p className="!mb-0 !mt-0">Shanghai West Bund Art Center (2025)</p>
-            <p className="!mb-0 !mt-0">NYU Global Show & Tell (2025)</p>
-
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Conference
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>Art and Design Education: FutureLab, 2025</em>
             </p>
+            <p className="!mt-0">West Bund Art Center, Shanghai, China</p>
+
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>NYU Global Show & Tell, 2025</em>
+            </p>
+            <p className="!mb-0 !mt-0">NYU Shanghai, Shanghai, China</p>
+
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Conference
+            </h3>
             <p className="!mb-0 !mt-0">
+              COSA (Center for Open Source Arts) x NYU{" "}
               <a
-                href="https://clinicopensourcearts.org/"
+                href="https://accad.osu.edu/news/cosa-x-nyu-global-dialogues-creative-tools"
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                Machine Learning for Creative Coding Conference
+              </a>
+              , New York, Mar 2025
+              {"  "}
+              <a
+                href="https://docs.google.com/presentation/d/1M5xfaeLiY5PyC25rPTrvyXr9C6TKwTNz8YfzwJqj_9o/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
               >
-                COSA (Clinic for Open Source Arts)
-              </a>{" "}
-              x NYU Machine Learning for Creative Coding Conference, NY, Mar
-              2025
+                Slides
+              </a>
             </p>
 
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Website
-            </p>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Links
+            </h3>
 
             <p>
+              Live Demo:{" "}
               <a
                 href="https://interactivenn.netlify.app/"
                 target="_blank"
@@ -80,25 +111,47 @@ export default function InteractiveNeuralNetworksPost() {
                 interactivenn.netlify.app
               </a>
             </p>
-
-            {/* Time Section */}
-            {/* <div>
-              <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
-                Time
-              </h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                2024-2025
-              </p>
-            </div> */}
+            <p>
+              <a
+                href="https://github.com/XiaozaoWang/Interactive-Neural-Networks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                Github Repo
+              </a>{" "}
+            </p>
           </div>
         </div>
 
-        {/* Video Section */}
+        {/* ============== Main Content ================= */}
+        {/* Demo */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">Video</h3>
+          <h2 className="text-2xl font-bold mb-4">Demo</h2>
+          <p className="!my-2">
+            <strong>Explorable Explanation of a single perceptron:</strong>
+          </p>
+
+          <ZoomableImage
+            src="/blog-images/inn/d1.gif"
+            alt="Neuron Demo"
+            className="w-2/3 rounded-lg"
+          />
+          <p className="!my-2">
+            <strong>Explorable Explanation of multi-layer perceptron:</strong>
+          </p>
+
+          <ZoomableImage
+            src="/blog-images/inn/d2.gif"
+            alt="MLP Demo"
+            className="w-2/3 rounded-lg"
+          />
+          <p className="!my-2">
+            <strong>Video Demo:</strong>
+          </p>
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
-              src="https://drive.google.com/file/d/1WKuMUcKnRuAW0_feQhPq503mUfT-fuT5/preview"
+              src="https://www.youtube.com/embed/ERDMJC7V_-Y?si=mO1By3YXFRCfj_rE"
               className="absolute top-0 left-0 w-full h-full rounded-lg"
               allow="autoplay"
               allowFullScreen
@@ -106,57 +159,105 @@ export default function InteractiveNeuralNetworksPost() {
           </div>
         </div>
 
-        {/* Demo Section */}
+        {/* Design*/}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">Demo</h3>
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
-          <img
-            src="/blog-images/inn/neuron.gif"
-            alt="Neuron Demo"
-            className="w-full rounded-lg"
-          />
-          <img
-            src="/blog-images/inn/mlp.gif"
-            alt="MLP Demo"
-            className="w-full rounded-lg"
-          />
-          {/* </div> */}
+          <h2 className="text-2xl font-bold mb-4">Design</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4  mr-4 mb-6 w-4/5">
+            <ZoomableImage
+              src="/blog-images/inn/s1.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/inn/s2.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 w-4/5 ">
+            <ZoomableImage
+              src="/blog-images/inn/s3.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/inn/s4.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
 
-        {/* Exhibition Section */}
+        {/* Exhibition */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">
-            Exhibition at Shanghai New Bund Art Center
-          </h3>
-          <Gallery
+          <h2 className="text-2xl font-bold mb-4">Exhibitions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4  mb-6">
+            <ZoomableImage
+              src="/blog-images/inn/ex0.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/inn/ex1.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4 mb-6">
+            <ZoomableImage
+              src="/blog-images/inn/ex3.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/inn/ex6.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
+
+          <p className="!my-2">
+            <strong>
+              Trailer Video for the Physical Installation (For Children):
+            </strong>
+          </p>
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              src="https://www.youtube.com/embed/PjvQ_i1lBPI?si=EXo-NFX9nFRT146v"
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+              allow="autoplay"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* <Gallery
             images={[
               "/blog-images/inn/ex_main.jpg",
               "/blog-images/inn/ex_kibo.jpg",
               "/blog-images/inn/ex_inter1.jpg",
             ]}
-          />
-
-          <Gallery
-            images={[
-              "/blog-images/inn/ex_kid.jpg",
-              "/blog-images/inn/inn2.jpg",
-              "/blog-images/inn/ex_user2.jpg",
-            ]}
-          />
+          /> */}
         </div>
 
-        {/* Presentation Section */}
+        {/* Presentation */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-bold mb-4">
             Presentation at COSA x NYU Machine Learning for Creative Coding
             Conference
-          </h3>
-          <Gallery
-            images={[
-              "/blog-images/inn/nycpre1.jpg",
-              "/blog-images/inn/nycpre2.jpg",
-            ]}
-          />
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4 mb-6">
+            <ZoomableImage
+              src="/blog-images/inn/ex7.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/inn/ex8.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </article>

@@ -3,6 +3,7 @@ import { getBlogPosts, getPostBySlug, getPostComponent } from "app/work/utils";
 import { getTagColor } from "app/work/posts";
 import { baseUrl } from "app/sitemap";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
@@ -60,8 +61,15 @@ export default async function WorkPost({ params }) {
     notFound();
   }
 
+  // Get all posts and find prev/next
+  const allPosts = getBlogPosts();
+  const currentIndex = allPosts.findIndex((p) => p.slug === slug);
+  const prevPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const nextPost =
+    currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
+
   return (
-    <section>
+    <section className="relative pb-20">
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -98,13 +106,20 @@ export default async function WorkPost({ params }) {
           </span>
         </div>
       )}
-      <h1 className="title font-semibold text-4xl tracking-tighter mb-4">
-        {post.title}
-      </h1>
+      <div className="flex items-center gap-4 mb-4">
+        <h1 className="title font-semibold text-4xl tracking-tighter">
+          {post.title}
+        </h1>
+        {post.type === "team" && (
+          <span className="text-xs font-medium px-1.5 py-0.5 rounded border text-purple-600 dark:text-purple-400 border-purple-300 dark:border-purple-600">
+            team project
+          </span>
+        )}
+      </div>
       {/* Time */}
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
+      {/* <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
         {post.time}
-      </p>
+      </p> */}
       {/* 显示标签 */}
       <div className="flex flex-wrap gap-3 mb-6">
         {post.tags.map((tag) => (
@@ -113,13 +128,36 @@ export default async function WorkPost({ params }) {
             className="text-sm font-medium"
             style={{ color: getTagColor(tag) }}
           >
-            {tag}
+            #{tag}
           </span>
         ))}
       </div>{" "}
       <div className="border-b border-gray-200 dark:border-gray-700 mb-8"></div>
       {/* 渲染动态加载的文章组件 */}
       <PostComponent />
+      {/* Navigation buttons */}
+      <div className="fixed bottom-8 left-0 right-0 flex justify-between pointer-events-none">
+        <div className="ml-[280px]">
+          {prevPost && (
+            <Link
+              href={`/work/${prevPost.slug}`}
+              className="pointer-events-auto px-4 py-2 rounded-md text-sm font-medium bg-blue-500 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-lg"
+            >
+              ← Prev
+            </Link>
+          )}
+        </div>
+        <div className="mr-8">
+          {nextPost && (
+            <Link
+              href={`/work/${nextPost.slug}`}
+              className="pointer-events-auto px-4 py-2 rounded-md text-sm font-medium bg-blue-500 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-lg"
+            >
+              Next →
+            </Link>
+          )}
+        </div>
+      </div>
     </section>
   );
 }

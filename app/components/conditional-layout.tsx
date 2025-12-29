@@ -15,8 +15,15 @@ export function ConditionalLayout({ children }: { children: React.ReactNode }) {
         <main className="h-screen w-screen">{children}</main>
 
         {/* Overlaid Sidebar Navigation */}
-        <div className="fixed left-0 top-0 w-64 h-full bg-black/20 backdrop-blur-sm border-r border-white/10 z-50">
-          <Navbar />
+        <div className="fixed left-0 top-0 w-64 h-full bg-black/20 backdrop-blur-sm border-r border-white/10 z-50 flex flex-col">
+          <div className="flex-1">
+            <Navbar />
+          </div>
+          <div className="p-6 text-xs text-white/70 space-y-1">
+            <p className="font-medium">Prism (2023)</p>
+            <p>Created with p5.js</p>
+            <p className="italic">Instruction: Press to rotate the prism.</p>
+          </div>
         </div>
       </div>
     );
@@ -26,8 +33,10 @@ export function ConditionalLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen">
       {/* Sidebar */}
-      <div className="w-64 bg-white dark:bg-black border-r border-gray-200 dark:border-gray-800 fixed left-0 top-0 h-full">
-        <Navbar />
+      <div className="w-64 bg-white dark:bg-black border-r border-gray-200 dark:border-gray-800 fixed left-0 top-0 h-full flex flex-col">
+        <div className="flex-1">
+          <Navbar />
+        </div>
       </div>
       {/* Main Content */}
       <div className="flex-1 ml-64">

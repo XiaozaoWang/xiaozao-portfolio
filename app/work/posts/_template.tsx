@@ -1,55 +1,91 @@
-// 添加新文章的模板
-// 复制这个文件并重命名为你的文章slug.tsx
+import Image from "next/image";
+import { Gallery } from "app/components/gallery";
+import { ZoomableImage } from "app/components/zoomable-image";
+import { posts } from "./index";
 
-export default function NewPostTemplate() {
+export default function TemplatePost() {
+  const postData = posts.find((p) => p.slug === "template");
   return (
     <article className="prose prose-lg max-w-none dark:prose-invert">
       <div className="mb-8">
-        <p className="text-lg text-gray-600 dark:text-gray-300">
-          这里是你文章的开头介绍段落...
-        </p>
+        <h1 className="!text-6xl font-bold !my-10 !text-blue-500 dark:!text-white">
+          How to make machine learning more intuitive for beginners?
+        </h1>
+        {/* Info Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="md:col-span-1">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Abstract
+            </h3>
+            <p>Abstract Content</p>
+          </div>
+
+          {/* Right Sidebar */}
+          {/* space y 没用 */}
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Toolkit
+            </h3>
+            <p>React.js, custom machine learning model, Arduino, electronics</p>
+
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Exhibitions
+            </h3>
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>Art and Design Education: FutureLab, 2025</em>
+            </p>
+            <p className="!mt-0">West Bund Art Center, Shanghai, China</p>
+
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Links
+            </h3>
+
+            <p>
+              Live Demo:{" "}
+              <a
+                href="https://interactivenn.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                interactivenn.netlify.app
+              </a>
+            </p>
+          </div>
+        </div>
+
+        {/* ============== Main Content ================= */}
+
+        {/* Presentation */}
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold mb-4">
+            Presentation at COSA x NYU Machine Learning for Creative Coding
+            Conference
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4 mb-6">
+            <ZoomableImage
+              src="/blog-images/inn/ex7.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/inn/ex8.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        {/* Components */}
+        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+          <iframe
+            src="https://www.youtube.com/embed/PjvQ_i1lBPI?si=EXo-NFX9nFRT146v"
+            className="absolute top-0 left-0 w-full h-full rounded-lg"
+            allow="autoplay"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">第一个章节标题</h2>
-
-        <p className="mb-4">在这里写你的内容...</p>
-
-        {/* 你可以添加任何React组件 */}
-        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border-l-4 border-blue-400 mb-4">
-          <p className="text-sm text-blue-800 dark:text-blue-200">
-            <strong>提示:</strong> 你可以使用任何React功能，包括状态、交互等。
-          </p>
-        </div>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold mb-4">交互式示例</h2>
-
-        {/* 如果需要状态，记得在文件顶部添加 "use client" */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-            <h3 className="font-semibold text-green-600">优点</h3>
-            <ul className="list-disc list-inside mt-2 text-sm">
-              <li>优点1</li>
-              <li>优点2</li>
-            </ul>
-          </div>
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-            <h3 className="font-semibold text-red-600">缺点</h3>
-            <ul className="list-disc list-inside mt-2 text-sm">
-              <li>缺点1</li>
-              <li>缺点2</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 className="text-2xl font-bold mb-4">结论</h2>
-
-        <p>在这里总结你的观点...</p>
-      </section>
     </article>
   );
 }

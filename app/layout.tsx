@@ -92,6 +92,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  icons: {
+    icon: "/about-images/l1.png",
+    apple: "/about-images/l1.png",
+  },
   robots: {
     index: true,
     follow: true,

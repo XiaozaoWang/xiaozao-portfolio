@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -169,7 +174,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-2 text-neutral-800 dark:text-neutral-200;
 }
 
 .prose h1 {
@@ -177,7 +182,7 @@ html {
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-3xl font-medium tracking-tight mt-6 mb-6;
 }
 
 .prose h3 {
@@ -189,7 +194,7 @@ html {
 }
 
 .prose strong {
-  @apply font-medium;
+  @apply font-semibold;
 }
 
 .prose ul {

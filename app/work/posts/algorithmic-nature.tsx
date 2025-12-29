@@ -1,104 +1,152 @@
+import Image from "next/image";
 import { Gallery } from "app/components/gallery";
+import { ZoomableImage } from "app/components/zoomable-image";
 import { posts } from "./index";
 
 export default function AlgorithmicNaturePost() {
-  const postData = posts.find((p) => p.slug === "interactive-neural-networks");
+  const postData = posts.find((p) => p.slug === "algorithmic-nature");
   return (
     <article className="prose prose-lg max-w-none dark:prose-invert">
       <div className="mb-8">
+        <h1 className="!text-6xl font-bold !my-0 !text-red-800 dark:!text-white">
+          Is nature the only version possible?
+        </h1>
+        <h1 className="!text-6xl font-bold !my-0 !text-red-800 dark:!text-white">
+          Can algorithms reveal unrealized natures?
+        </h1>
+        {/* Info Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              This project is an educational exploration which aims to enhance
-              public’s understanding of neural networks by developing an
-              interactive online guide that explains their inner workings.
-              Through the use of text explanations, real-time simulations, and
-              interactive graphics, users can actively engage with the learning
-              process by modifying parameters and observing the corresponding
-              effects. This approach fosters a more intuitive and hands-on
-              understanding of complex concepts, contrasted with traditional,
-              passive learning methods. This project contributes to the
-              principles of Explainable AI (XAI) by promoting transparency in AI
-              decision-making process, building trust and encouraging
-              responsible use of this technology.
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              TL;DR:
+            </h3>
+            <strong>
+              I explore nature as a dynamic computational process, using
+              generative algorithms to simulate alternative natural forms that
+              could exist but don’t. By materializing these patterns through 3D
+              printing and exhibiting them alongside real specimens, my work
+              invites viewers to imagine the vast, unrealized possibilities
+              hidden within nature’s code.
+            </strong>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Abstract
+            </h3>
+            <p>
+              Could the natural patterns we see be just one manifestation of
+              infinite possibilities? Could a snowflake be just a single sample
+              drawn from a vast computational universe of potential forms?
+              <strong>
+                Through generative approaches, I render visible these unrealized
+                possibilities that nature could have taken but didn’t.
+              </strong>
+            </p>
+
+            <p>
+              Algorithms like L-systems and cellular automata show how simple
+              rules can give rise to countless complex results. These outcomes
+              form{" "}
+              <strong>what Stephen Wolfram calls a computational space</strong>:
+              the totality of patterns that are computationally possible. Yet
+              nature, constrained by material and environmental limitations,
+              brings only a narrow subset into physical form.
+            </p>
+            <p>
+              My work ventures into this unexplored territory. Through extensive
+              coding experiments, I explore how nature-inspired algorithms can
+              be used to imagine an “alternative nature.” In three explorations:
+              plant branching, snowflakes, and shell surfaces, I deliberately
+              manipulated parameters to generate patterns that don’t exist in
+              nature but trigger uncanny familiarity. This process samples the
+              unexplored edges of the computational space.{" "}
+              <strong>
+                The generative results are materialized through 3D printing and
+                exhibited alongside real specimens in a natural history museum
+                setting.
+              </strong>
+            </p>
+            <p>
+              <strong>
+                My work invites viewers to perceive nature not as a fixed set of
+                forms, but as an ongoing process of dynamic computation.
+              </strong>{" "}
+              Is our nature, in essence, a constantly running algorithm? And if
+              so, what other patterns—what other natures—might lie just beyond
+              what we observe?
             </p>
           </div>
 
           {/* Right Sidebar */}
-          {/* space y 没用 */}
           <div className="space-y-2">
-            {/* bold p */}
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Project Details
-            </p>
-            <p>{postData?.tags.map((tag) => `#${tag}`).join(" ")}</p>
-
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Time
-            </p>
-            <p>2024-2025</p>
-
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Toolkit
-            </p>
-            <p>React.js, custom machine learning model, Arduino, electronics</p>
+            </h3>
+            <p>javascript, 3d printing, electronics, natural specimen</p>
 
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
               Exhibitions
-            </p>
+            </h3>
             {/* no margin between the two p */}
-            <p className="!mb-0 !mt-0">Shanghai West Bund Art Center (2025)</p>
-            <p className="!mb-0 !mt-0">NYU Global Show & Tell (2025)</p>
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>Art and Design Education: FutureLab, 2025</em>
+            </p>
+            <p className="!mt-0">West Bund Art Center, Shanghai, China</p>
 
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Conference
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>Human + Desire + Machine, 2025</em>
+            </p>
+            <p className="!mt-0">Yuz Museum & NYU Shanghai, Shanghai, China</p>
+
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>Interactive Media Arts Capstone Show, 2025</em>
+            </p>
+            <p className="!mb-0 !mt-0">NYU Shanghai, Shanghai, China</p>
+
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Award
+            </h3>
+            <p className="font-semibold !mb-0 !mt-0">
+              <em>
+                Capstone Award of Distinction (Best Technical Achievement)
+              </em>
             </p>
             <p className="!mb-0 !mt-0">
-              <a
-                href="https://clinicopensourcearts.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-              >
-                COSA (Clinic for Open Source Arts)
-              </a>{" "}
-              x NYU Machine Learning for Creative Coding Conference, NY, Mar
-              2025
+              NYU Shanghai Interactive Media Arts, 2025
             </p>
 
-            <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              Website
-            </p>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+              Links
+            </h3>
 
             <p>
               <a
-                href="https://interactivenn.netlify.app/"
+                href="https://docs.google.com/document/d/1uFgxblQrAo5mhwjtxC9I4a2hfPizXHkT/edit?usp=sharing&ouid=103754443031941482251&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
               >
-                interactivenn.netlify.app
-              </a>
+                Capstone Essay
+              </a>{" "}
             </p>
-
-            {/* Time Section */}
-            {/* <div>
-              <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
-                Time
-              </h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                2024-2025
-              </p>
-            </div> */}
+            <p>
+              <a
+                href="https://github.com/XiaozaoWang/capstone"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                Github Repo
+              </a>{" "}
+            </p>
           </div>
         </div>
 
-        {/* Video Section */}
+        {/* ============== Main Content ================= */}
+        {/* Video */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">Video</h3>
+          <h2 className="text-2xl font-bold mb-4">Video</h2>
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
-              src="https://drive.google.com/file/d/1WKuMUcKnRuAW0_feQhPq503mUfT-fuT5/preview"
+              src="https://www.youtube.com/embed/aAxU9xscTwc?si=v3qUPCvVxqGdAk9p"
               className="absolute top-0 left-0 w-full h-full rounded-lg"
               allow="autoplay"
               allowFullScreen
@@ -106,57 +154,282 @@ export default function AlgorithmicNaturePost() {
           </div>
         </div>
 
-        {/* Demo Section */}
+        {/* Project Images */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">Demo</h3>
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
-          <img
-            src="/blog-images/inn/neuron.gif"
-            alt="Neuron Demo"
-            className="w-full rounded-lg"
+          <h2 className="text-2xl font-bold mb-4">Project Images</h2>
+          {/* Overview */}
+          <p className="!my-2">
+            <strong>Installation Overview</strong>
+          </p>
+
+          <ZoomableImage
+            src="/blog-images/an/ex1.jpg"
+            alt="image"
+            className="w-9/10"
           />
-          <img
-            src="/blog-images/inn/mlp.gif"
-            alt="MLP Demo"
-            className="w-full rounded-lg"
-          />
-          {/* </div> */}
+
+          {/* Part 1 */}
+          <p className="!my-2">
+            <strong>Part 1: Plant Branching</strong>
+          </p>
+
+          <div className="mb-8 w-9/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* 上下间隔 */}
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/pl1.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/pl2.jpg"
+                  alt="image"
+                  className=""
+                />
+              </div>
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/pl4.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/pl5.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/pl8.jpg"
+                  alt="image"
+                  className=""
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Part 2 */}
+          <p className="!my-2">
+            <strong>Part 2: Snowflakes</strong>
+          </p>
+
+          <div className="mb-8 w-9/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* 上下间隔 */}
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/sn4.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/sn5.jpg"
+                  alt="image"
+                  className=""
+                />
+              </div>
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/sn3.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/sn6-.png"
+                  alt="image"
+                  className=""
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Part 3 */}
+          <p className="!my-2">
+            <strong>Part 3: Shell Surfaces</strong>
+          </p>
+
+          <div className="mb-8 w-9/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* 上下间隔 */}
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/sh1.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/sh2.jpg"
+                  alt="image"
+                  className=""
+                />
+              </div>
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/sh3.png"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/sh4.png"
+                  alt="image"
+                  className=""
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Part 3 */}
+          <p className="!my-2">
+            <strong>Part 4: Algorithmic Nature Archive</strong>
+          </p>
+          <p className="!my-2">
+            We keep an archive for the living creatures… But can we also keep
+            one for the simulated ones?
+          </p>
+
+          <div className="mb-8 w-9/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* 上下间隔 */}
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/ac1.png"
+                  alt="image"
+                  className=""
+                />
+              </div>
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/blog-images/an/ac2.png"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/blog-images/an/ac3.png"
+                  alt="image"
+                  className=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Exhibition Section */}
+        {/* Exhibition */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">
-            Exhibition at Shanghai New Bund Art Center
-          </h3>
-          <Gallery
-            images={[
-              "/blog-images/inn/ex_main.jpg",
-              "/blog-images/inn/ex_kibo.jpg",
-              "/blog-images/inn/ex_inter1.jpg",
-            ]}
-          />
-
-          <Gallery
-            images={[
-              "/blog-images/inn/ex_kid.jpg",
-              "/blog-images/inn/inn2.jpg",
-              "/blog-images/inn/ex_user2.jpg",
-            ]}
-          />
+          <h2 className="text-2xl font-bold mb-4">Exhibitions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4  mb-6">
+            <ZoomableImage
+              src="/blog-images/an/ex4.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/ex3.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/ex9.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/ex2.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/ex7.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/ex5.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
 
-        {/* Presentation Section */}
+        {/* Process */}
         <div className="mt-12">
-          <h3 className="text-2xl font-bold mb-4">
-            Presentation at COSA x NYU Machine Learning for Creative Coding
-            Conference
-          </h3>
-          <Gallery
-            images={[
-              "/blog-images/inn/nycpre1.jpg",
-              "/blog-images/inn/nycpre2.jpg",
-            ]}
-          />
+          <h2 className="text-2xl font-bold mb-4">Development Process</h2>
+          <div className="grid grid-cols-1 gap-4 mr-4 mb-6 w-9/10">
+            <ZoomableImage
+              src="/blog-images/an/p1.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p2.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p3.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p4.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p5.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p6.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p7.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p8.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p9.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p10.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p11.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p12.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p13.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p14.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+            <ZoomableImage
+              src="/blog-images/an/p15.jpg"
+              alt="Image"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </article>

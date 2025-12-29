@@ -1,42 +1,49 @@
-# Portfolio Blog Starter
-
-This is a porfolio site template complete with a blog. Includes:
-
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
-
-## Demo
-
-https://portfolio-blog-starter.vercel.app
-
-## How to Use
-
-You can choose from one of the following two methods to use this repository:
-
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
-
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
-```
-
-Then, run Next.js in development mode:
+# Run dev mode
 
 ```bash
 pnpm dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+# TO-DO
+
+- IW comments
+- city of all videos (gifs)
+- algorithmic nature gif
+- 重新剪视频！
+- add links to exhibitions etc
+- my work 设置 featured
+
+AN codebook
+IW sketches
+prism sketches
+comments 视频
+instructions for creative coding projects
+genesis gif
+
+不那么重要
+
+- 每个 work 页面加年份
+- AN 里部分图片点开 calibration
+- 电影课
+- 加一些速写
+- 加一些兴趣
+
+# Add a project
+
+1. update basic information (tags, image, etc): `app/work/posts/index.ts`
+2. create an entry in `app/work/utils.ts`
+3. create a new tsx: `app/work/posts/{slug}.tsx` by duplicating `_template.tsx` and change the export default function name to the slug name
+
+文章顺序：index.ts
+
+# Formatting
+
+Side bar: app/components/conditional-layout.tsx
+blog card: app/components/blog-card.tsx
+full project page: app/work/[slug]/page.tsx
+tag color mapping: app/work/posts/index.ts
+
+text font:
+全局：global.css (line 8-19)
+
+text size: global.css (line 171-)

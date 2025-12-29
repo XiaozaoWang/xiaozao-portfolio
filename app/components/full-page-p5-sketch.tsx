@@ -162,18 +162,10 @@ export function FullPageP5Sketch() {
           }
 
           rotate() {
-            if (p.keyIsPressed || p.mouseIsPressed) {
-              let rotate_amount;
-              if (p.keyCode == p.RIGHT_ARROW || p.mouseIsPressed) {
-                this.angle += p.PI / 180;
-                rotate_amount = p.PI / 180;
-              } else if (p.keyCode == p.LEFT_ARROW) {
-                this.angle -= p.PI / 180;
-                rotate_amount = -p.PI / 180;
-              } else {
-                this.angle += 0;
-                rotate_amount = 0;
-              }
+            let rotate_amount;
+            if (p.mouseIsPressed) {
+              this.angle += p.PI / 180;
+              rotate_amount = p.PI / 180;
               this.v1.x =
                 this.v1.x * p.cos(rotate_amount) -
                 this.v1.y * p.sin(rotate_amount);

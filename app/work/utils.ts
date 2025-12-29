@@ -6,6 +6,16 @@ const postComponents = {
   "interactive-neural-networks": () =>
     import("./posts/interactive-neural-networks"),
   "algorithmic-nature": () => import("./posts/algorithmic-nature"),
+  "invisible-worlds": () => import("./posts/invisible-worlds"),
+  "digital-blossoms": () => import("./posts/digital-blossoms"),
+  "the-shape-of-sound": () => import("./posts/the-shape-of-sound"),
+  "a-flowing-painting": () => import("./posts/a-flowing-painting"),
+  morphing: () => import("./posts/morphing"),
+  "city-of-all": () => import("./posts/city-of-all"),
+  "between-worlds": () => import("./posts/between-worlds"),
+  prism: () => import("./posts/prism"),
+  "daughter-of-nature": () => import("./posts/daughter-of-nature"),
+  comments: () => import("./posts/comments"),
 };
 
 export function getBlogPosts(): PostMetadata[] {
