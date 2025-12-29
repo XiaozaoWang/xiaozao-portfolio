@@ -17,51 +17,51 @@ export default function IllustrationsPost() {
               {/* 上下间隔 */}
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/gallery/art/4.jpg"
+                  src="/gallery/art2/4.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/art/8.jpg"
+                  src="/gallery/art2/8.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/art/10.jpg"
-                  alt="image"
-                  className=""
-                />
-              </div>
-              <div className="!space-y-4">
-                <ZoomableImage
-                  src="/gallery/art/5.jpg"
-                  alt="image"
-                  className=""
-                />
-                <ZoomableImage
-                  src="/gallery/art/7.jpg"
-                  alt="image"
-                  className=""
-                />
-                <ZoomableImage
-                  src="/gallery/art/12.jpg"
+                  src="/gallery/art2/10.jpg"
                   alt="image"
                   className=""
                 />
               </div>
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/gallery/art/9.jpg"
+                  src="/gallery/art2/5.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/art/11.jpg"
+                  src="/gallery/art2/7.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/art/6.jpg"
+                  src="/gallery/art2/12.jpg"
+                  alt="image"
+                  className=""
+                />
+              </div>
+              <div className="!space-y-4">
+                <ZoomableImage
+                  src="/gallery/art2/9.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/gallery/art2/11.jpg"
+                  alt="image"
+                  className=""
+                />
+                <ZoomableImage
+                  src="/gallery/art2/6.jpg"
                   alt="image"
                   className=""
                 />

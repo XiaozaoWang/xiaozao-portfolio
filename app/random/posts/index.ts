@@ -75,7 +75,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Illustrations",
     // time: "2023",
     category: "art",
-    coverImage: "/gallery/art/4.jpg",
+    coverImage: "/gallery/art2/4.jpg",
     hasCustomContent: true,
   },
   {
@@ -83,7 +83,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Sketches",
     // time: "2023",
     category: "art",
-    coverImage: "/gallery/sketch/c.png",
+    coverImage: "/gallery/sketch2/c.jpg",
     hasCustomContent: true,
   },
   {
@@ -99,7 +99,7 @@ export const randomPosts: RandomPostMetadata[] = [
     title: "Photography",
     // time: "2023",
     category: "art",
-    coverImage: "/gallery/photo/2.jpg",
+    coverImage: "/gallery/photo2/2.jpg",
     hasCustomContent: true,
   },
   //   {

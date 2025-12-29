@@ -133,7 +133,7 @@ export default function InteractiveNeuralNetworksPost() {
           </p>
 
           <ZoomableImage
-            src="/blog-images/inn/d1.gif"
+            src="/blog-images/inn3/d1.gif"
             alt="Neuron Demo"
             className="w-2/3 rounded-lg"
           />
@@ -142,7 +142,7 @@ export default function InteractiveNeuralNetworksPost() {
           </p>
 
           <ZoomableImage
-            src="/blog-images/inn/d2.gif"
+            src="/blog-images/inn3/d2.gif"
             alt="MLP Demo"
             className="w-2/3 rounded-lg"
           />
@@ -164,24 +164,24 @@ export default function InteractiveNeuralNetworksPost() {
           <h2 className="text-2xl font-bold mb-4">Design</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4  mr-4 mb-6 w-4/5">
             <ZoomableImage
-              src="/blog-images/inn/s1.jpg"
+              src="/blog-images/inn3/s1.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/inn/s2.jpg"
+              src="/blog-images/inn3/s2.jpg"
               alt="Image"
               className="w-full h-auto"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 w-4/5 ">
             <ZoomableImage
-              src="/blog-images/inn/s3.jpg"
+              src="/blog-images/inn3/s3.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/inn/s4.jpg"
+              src="/blog-images/inn3/s4.jpg"
               alt="Image"
               className="w-full h-auto"
             />
@@ -193,12 +193,12 @@ export default function InteractiveNeuralNetworksPost() {
           <h2 className="text-2xl font-bold mb-4">Exhibitions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4  mb-6">
             <ZoomableImage
-              src="/blog-images/inn/ex0.jpg"
+              src="/blog-images/inn3/ex0.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/inn/ex1.jpg"
+              src="/blog-images/inn3/ex1.jpg"
               alt="Image"
               className="w-full h-auto"
             />
@@ -206,12 +206,12 @@ export default function InteractiveNeuralNetworksPost() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4 mb-6">
             <ZoomableImage
-              src="/blog-images/inn/ex3.jpg"
+              src="/blog-images/inn3/ex3.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/inn/ex6.jpg"
+              src="/blog-images/inn3/ex6.jpg"
               alt="Image"
               className="w-full h-auto"
             />
@@ -233,9 +233,9 @@ export default function InteractiveNeuralNetworksPost() {
 
           {/* <Gallery
             images={[
-              "/blog-images/inn/ex_main.jpg",
-              "/blog-images/inn/ex_kibo.jpg",
-              "/blog-images/inn/ex_inter1.jpg",
+              "/blog-images/inn3/ex_main.jpg",
+              "/blog-images/inn3/ex_kibo.jpg",
+              "/blog-images/inn3/ex_inter1.jpg",
             ]}
           /> */}
         </div>
@@ -248,12 +248,12 @@ export default function InteractiveNeuralNetworksPost() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4 mb-6">
             <ZoomableImage
-              src="/blog-images/inn/ex7.jpg"
+              src="/blog-images/inn3/ex7.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/inn/ex8.jpg"
+              src="/blog-images/inn3/ex8.jpg"
               alt="Image"
               className="w-full h-auto"
             />

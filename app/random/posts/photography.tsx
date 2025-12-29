@@ -13,79 +13,79 @@ export default function PhotographyPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="!space-y-4">
               <ZoomableImage
-                src="/gallery/photo/1.jpg"
+                src="/gallery/photo2/1.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/3.jpg"
+                src="/gallery/photo2/3.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/5.jpg"
+                src="/gallery/photo2/5.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/7.jpg"
+                src="/gallery/photo2/7.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/c2.jpg"
+                src="/gallery/photo2/c2.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/c4.jpg"
+                src="/gallery/photo2/c4.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/c5.jpg"
+                src="/gallery/photo2/c5.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/u1.jpg"
+                src="/gallery/photo2/u1.jpg"
                 alt="image"
                 className=""
               />
             </div>
             <div className="!space-y-4">
               <ZoomableImage
-                src="/gallery/photo/2.jpg"
+                src="/gallery/photo2/2.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/4.jpg"
+                src="/gallery/photo2/4.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/6.jpg"
+                src="/gallery/photo2/6.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/c1.jpg"
+                src="/gallery/photo2/c1.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/c3.jpg"
+                src="/gallery/photo2/c3.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/u2.jpg"
+                src="/gallery/photo2/u2.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/photo/u3.jpg"
+                src="/gallery/photo2/u3.jpg"
                 alt="image"
                 className=""
               />

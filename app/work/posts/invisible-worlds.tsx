@@ -126,12 +126,12 @@ export default function InvisibleWorldsPost() {
                 </strong>
               </p>
               <ZoomableImage
-                src="/blog-images/iw/u2.jpg"
+                src="/blog-images/iw3/u2.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/iw/u4.jpg"
+                src="/blog-images/iw3/u4.jpg"
                 alt="image"
                 className=""
               />
@@ -141,12 +141,12 @@ export default function InvisibleWorldsPost() {
                 <strong>Teaching children to interact with the project</strong>
               </p>
               <ZoomableImage
-                src="/blog-images/iw/u6.jpg"
+                src="/blog-images/iw3/u6.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/blog-images/iw/u7.jpg"
+                src="/blog-images/iw3/u7.jpg"
                 alt="image"
                 className=""
               />
@@ -158,14 +158,14 @@ export default function InvisibleWorldsPost() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="!space-y-4">
               <ZoomableImage
-                src="/blog-images/iw/u9.jpg"
+                src="/blog-images/iw3/u9.jpg"
                 alt="image"
                 className=""
               />
             </div>
             <div className="!space-y-4">
               <ZoomableImage
-                src="/blog-images/iw/u10.jpg"
+                src="/blog-images/iw3/u10.jpg"
                 alt="image"
                 className=""
               />
@@ -253,7 +253,7 @@ export default function InvisibleWorldsPost() {
             out.
           </p>
           <ZoomableImage
-            src="/blog-images/iw/a1.png"
+            src="/blog-images/iw3/a1.jpg"
             alt="Neuron Demo"
             className="w-1/2 "
           />
@@ -263,7 +263,7 @@ export default function InvisibleWorldsPost() {
             the concept of World as a User Interface.
           </p>
           <ZoomableImage
-            src="/blog-images/iw/p1.jpg"
+            src="/blog-images/iw3/p1.jpg"
             alt="Neuron Demo"
             className="w-2/3 "
           />
@@ -284,7 +284,7 @@ export default function InvisibleWorldsPost() {
           </p>
 
           <ZoomableImage
-            src="/blog-images/iw/p2.png"
+            src="/blog-images/iw3/p2.jpg"
             alt="Neuron Demo"
             className="w-2/3 "
           />
@@ -296,7 +296,7 @@ export default function InvisibleWorldsPost() {
             environment.
           </p>
           <ZoomableImage
-            src="/blog-images/iw/p3.png"
+            src="/blog-images/iw3/p3.jpg"
             alt="Neuron Demo"
             className="w-2/3 "
           />
@@ -310,14 +310,14 @@ export default function InvisibleWorldsPost() {
             {/* 上下间隔 */}
             <div className="!space-y-4">
               <ZoomableImage
-                src="/blog-images/iw/p4.jpg"
+                src="/blog-images/iw3/p4.jpg"
                 alt="image"
                 className=""
               />
             </div>
             <div className="!space-y-4">
               <ZoomableImage
-                src="/blog-images/iw/p5.jpg"
+                src="/blog-images/iw3/p5.jpg"
                 alt="image"
                 className=""
               />
@@ -330,47 +330,47 @@ export default function InvisibleWorldsPost() {
           <h2 className="text-2xl font-bold mb-4">Development</h2>
           <div className="grid gap-4 mr-4 mb-6 w-4/5">
             <ZoomableImage
-              src="/blog-images/iw/p6.png"
+              src="/blog-images/iw3/p6.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p7.png"
+              src="/blog-images/iw3/p7.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p8.png"
+              src="/blog-images/iw3/p8.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p9.png"
+              src="/blog-images/iw3/p9.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p10.png"
+              src="/blog-images/iw3/p10.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p11.png"
+              src="/blog-images/iw3/p11.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p12.png"
+              src="/blog-images/iw3/p12.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p13.png"
+              src="/blog-images/iw3/p13.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/iw/p14.png"
+              src="/blog-images/iw3/p14.jpg"
               alt="Image"
               className="w-full h-auto"
             />

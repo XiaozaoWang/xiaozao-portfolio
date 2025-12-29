@@ -16,12 +16,12 @@ export default function SketchesPost() {
             <div className="!space-y-4 md:col-span-2">
               {" "}
               <ZoomableImage
-                src="/gallery/sketch/c3.jpg"
+                src="/gallery/sketch2/c3.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/sketch/c4.jpg"
+                src="/gallery/sketch2/c4.jpg"
                 alt="image"
                 className=""
               />
@@ -29,21 +29,21 @@ export default function SketchesPost() {
 
             <div className="!space-y-4 md:col-span-3">
               <ZoomableImage
-                src="/gallery/sketch/c1.jpg"
+                src="/gallery/sketch2/c1.jpg"
                 alt="image"
                 className=""
               />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="!space-y-4 md:col-span-1">
                   <ZoomableImage
-                    src="/gallery/sketch/c2.jpg"
+                    src="/gallery/sketch2/c2.jpg"
                     alt="image"
                     className=""
                   />
                 </div>
                 <div className="!space-y-4 md:col-span-1">
                   <ZoomableImage
-                    src="/gallery/sketch/c5.jpg"
+                    src="/gallery/sketch2/c5.jpg"
                     alt="image"
                     className=""
                   />
@@ -59,76 +59,76 @@ export default function SketchesPost() {
             {/* 上下间隔 */}
             <div className="!space-y-4">
               <ZoomableImage
-                src="/gallery/sketch/1.jpg"
+                src="/gallery/sketch2/1.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/sketch/2.jpg"
+                src="/gallery/sketch2/2.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/sketch/3.jpg"
-                alt="image"
-                className=""
-              />
-            </div>
-            <div className="!space-y-4">
-              <ZoomableImage
-                src="/gallery/sketch/7.jpg"
-                alt="image"
-                className=""
-              />
-              <ZoomableImage
-                src="/gallery/sketch/4.jpg"
-                alt="image"
-                className=""
-              />
-              <ZoomableImage
-                src="/gallery/sketch/9.jpg"
+                src="/gallery/sketch2/3.jpg"
                 alt="image"
                 className=""
               />
             </div>
             <div className="!space-y-4">
               <ZoomableImage
-                src="/gallery/sketch/10.jpg"
+                src="/gallery/sketch2/7.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/sketch/6.jpg"
+                src="/gallery/sketch2/4.jpg"
                 alt="image"
                 className=""
               />
               <ZoomableImage
-                src="/gallery/sketch/11.jpg"
+                src="/gallery/sketch2/9.jpg"
+                alt="image"
+                className=""
+              />
+            </div>
+            <div className="!space-y-4">
+              <ZoomableImage
+                src="/gallery/sketch2/10.jpg"
+                alt="image"
+                className=""
+              />
+              <ZoomableImage
+                src="/gallery/sketch2/6.jpg"
+                alt="image"
+                className=""
+              />
+              <ZoomableImage
+                src="/gallery/sketch2/11.jpg"
                 alt="image"
                 className=""
               />
               {/* <ZoomableImage
-                  src="/gallery/sketch/c1.jpg"
+                  src="/gallery/sketch2/c1.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/sketch/c2.jpg"
+                  src="/gallery/sketch2/c2.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/sketch/c3.jpg"
+                  src="/gallery/sketch2/c3.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/sketch/c4.jpg"
+                  src="/gallery/sketch2/c4.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/gallery/sketch/c5.jpg"
+                  src="/gallery/sketch2/c5.jpg"
                   alt="image"
                   className=""
                 /> */}

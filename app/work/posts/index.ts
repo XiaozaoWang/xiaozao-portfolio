@@ -47,7 +47,7 @@ export const posts: PostMetadata[] = [
     tags: ["generative art", "physical computing", "speculative design"],
     featured: false,
     time: "2025",
-    image: "/blog-images/an2/sn2.jpg",
+    image: "/blog-images/an3/sn2.jpg",
     type: "individual",
   },
   {
@@ -57,7 +57,7 @@ export const posts: PostMetadata[] = [
     tags: ["explainable AI", "education", "machine learning", "web dev"],
     featured: false,
     time: "2024-2025",
-    image: "/blog-images/inn/d1.gif",
+    image: "/blog-images/inn3/d1.gif",
     type: "individual",
   },
   {
@@ -68,7 +68,7 @@ export const posts: PostMetadata[] = [
     tags: ["XR", "education", "embodied learning"],
     featured: false,
     time: "2025",
-    image: "/blog-images/iw/c.png",
+    image: "/blog-images/iw3/c.jpg",
     type: "individual",
   },
   {

@@ -163,7 +163,7 @@ export default function AlgorithmicNaturePost() {
           </p>
 
           <ZoomableImage
-            src="/blog-images/an2/ex1.jpg"
+            src="/blog-images/an3/ex1.jpg"
             alt="image"
             className="w-9/10"
           />
@@ -178,29 +178,29 @@ export default function AlgorithmicNaturePost() {
               {/* 上下间隔 */}
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/pl1.jpg"
+                  src="/blog-images/an3/pl1.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/pl2.jpg"
+                  src="/blog-images/an3/pl2.jpg"
                   alt="image"
                   className=""
                 />
               </div>
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/pl4.jpg"
+                  src="/blog-images/an3/pl4.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/pl5.jpg"
+                  src="/blog-images/an3/pl5.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/pl8.jpg"
+                  src="/blog-images/an3/pl8.jpg"
                   alt="image"
                   className=""
                 />
@@ -218,24 +218,24 @@ export default function AlgorithmicNaturePost() {
               {/* 上下间隔 */}
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/sn4.jpg"
+                  src="/blog-images/an3/sn4.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/sn5.jpg"
+                  src="/blog-images/an3/sn5.jpg"
                   alt="image"
                   className=""
                 />
               </div>
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/sn3.jpg"
+                  src="/blog-images/an3/sn3.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/sn6-.png"
+                  src="/blog-images/an3/sn6-.jpg"
                   alt="image"
                   className=""
                 />
@@ -253,24 +253,24 @@ export default function AlgorithmicNaturePost() {
               {/* 上下间隔 */}
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/sh1.jpg"
+                  src="/blog-images/an3/sh1.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/sh2.jpg"
+                  src="/blog-images/an3/sh2.jpg"
                   alt="image"
                   className=""
                 />
               </div>
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/sh3.png"
+                  src="/blog-images/an3/sh3.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/sh4.png"
+                  src="/blog-images/an3/sh4.jpg"
                   alt="image"
                   className=""
                 />
@@ -292,19 +292,19 @@ export default function AlgorithmicNaturePost() {
               {/* 上下间隔 */}
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/ac1.png"
+                  src="/blog-images/an3/ac1.jpg"
                   alt="image"
                   className=""
                 />
               </div>
               <div className="!space-y-4">
                 <ZoomableImage
-                  src="/blog-images/an2/ac2.png"
+                  src="/blog-images/an3/ac2.jpg"
                   alt="image"
                   className=""
                 />
                 <ZoomableImage
-                  src="/blog-images/an2/ac3.png"
+                  src="/blog-images/an3/ac3.jpg"
                   alt="image"
                   className=""
                 />
@@ -318,32 +318,32 @@ export default function AlgorithmicNaturePost() {
           <h2 className="text-2xl font-bold mb-4">Exhibitions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mr-4  mb-6">
             <ZoomableImage
-              src="/blog-images/an2/ex4.jpg"
+              src="/blog-images/an3/ex4.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/ex3.jpg"
+              src="/blog-images/an3/ex3.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/ex9.jpg"
+              src="/blog-images/an3/ex9.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/ex2.jpg"
+              src="/blog-images/an3/ex2.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/ex7.jpg"
+              src="/blog-images/an3/ex7.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/ex5.jpg"
+              src="/blog-images/an3/ex5.jpg"
               alt="Image"
               className="w-full h-auto"
             />
@@ -355,77 +355,77 @@ export default function AlgorithmicNaturePost() {
           <h2 className="text-2xl font-bold mb-4">Development Process</h2>
           <div className="grid grid-cols-1 gap-4 mr-4 mb-6 w-9/10">
             <ZoomableImage
-              src="/blog-images/an2/p1.jpg"
+              src="/blog-images/an3/p1.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p2.jpg"
+              src="/blog-images/an3/p2.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p3.jpg"
+              src="/blog-images/an3/p3.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p4.jpg"
+              src="/blog-images/an3/p4.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p5.jpg"
+              src="/blog-images/an3/p5.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p6.jpg"
+              src="/blog-images/an3/p6.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p7.jpg"
+              src="/blog-images/an3/p7.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p8.jpg"
+              src="/blog-images/an3/p8.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p9.jpg"
+              src="/blog-images/an3/p9.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p10.jpg"
+              src="/blog-images/an3/p10.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p11.jpg"
+              src="/blog-images/an3/p11.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p12.jpg"
+              src="/blog-images/an3/p12.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p13.jpg"
+              src="/blog-images/an3/p13.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p14.jpg"
+              src="/blog-images/an3/p14.jpg"
               alt="Image"
               className="w-full h-auto"
             />
             <ZoomableImage
-              src="/blog-images/an2/p15.jpg"
+              src="/blog-images/an3/p15.jpg"
               alt="Image"
               className="w-full h-auto"
             />
