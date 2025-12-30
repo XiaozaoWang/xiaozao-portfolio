@@ -10,8 +10,10 @@ const content = {
     description: (
       <>
         <p className="mb-3">
-          I use code not only as a building tool, but also as a thinking tool to
-          turn abstract ideas into precise, interactive systems.
+          <strong>
+            I use code not only as a building tool, but also as a thinking tool
+            to turn abstract ideas into precise, interactive systems.
+          </strong>
         </p>
         <p className="mb-3">
           With a dual background in Computer Science and Interactive Media, I
@@ -35,8 +37,10 @@ const content = {
     description: (
       <>
         <p className="mb-3">
-          I am a creative mind that sees the world in "what-ifs." I approach
-          problems through artistic inquiry, using imagination and
+          <strong>
+            I am a creative mind that sees the world in "what-ifs."
+          </strong>{" "}
+          I approach problems through artistic inquiry, using imagination and
           experimentation to reframe perception and design experiences.
         </p>
         <p className="mb-3">
@@ -60,9 +64,11 @@ const content = {
     description: (
       <>
         <p className="mb-3">
-          I am passionate about education and the transformative power of
-          curiosity. I believe the future of education isn't passive but
-          immersive.
+          <strong>
+            I'm passionate about education and the transformative power of
+            curiosity.
+          </strong>{" "}
+          I believe the future of education isn't passive but immersive.
         </p>
         <p className="mb-3">
           My vision is to transform "knowledge delivery" into active, embodied
@@ -185,7 +191,7 @@ export function VennDiagram() {
       </div>
 
       {/* Content Display */}
-      <div className="h-[600px] flex items-start pt-8 overflow-hidden">
+      <div className="h-[600px] flex items-start !pt-0 overflow-hidden">
         {activeCircle ? (
           <div className="space-y-3 animate-in fade-in duration-300 overflow-y-auto max-h-full pr-2">
             <h3
@@ -209,7 +215,7 @@ export function VennDiagram() {
             )}
           </div>
         ) : (
-          <p className="text-gray-500 dark:text-gray-400 italic">
+          <p className="text-gray-500 dark:text-gray-400 italic m-auto text-center px-4">
             Hover over a circle to learn more about my skills and passions.
           </p>
         )}

@@ -33,6 +33,9 @@ export default function AboutPage() {
 
           {/* Bio */}
           <div className="md:col-span-3 space-y-4 text-gray-700 dark:text-gray-300">
+            <h1 className="!text-4xl font-semibold !text-blue-500 dark:!text-white">
+              Inventing technologies of curiosity.
+            </h1>
             <p className="leading-relaxed">
               I am a multidisciplinary creative technologist working at the
               intersection of{" "}
